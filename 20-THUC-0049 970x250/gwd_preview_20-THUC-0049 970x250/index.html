@@ -1695,23 +1695,21 @@ body {
     -webkit-animation: 13.25s linear 0s 1 normal forwards gwd-gen-1d8cgwdanimation_gwd-keyframes;
     -moz-animation: 13.25s linear 0s 1 normal forwards gwd-gen-1d8cgwdanimation_gwd-keyframes;
 }
-.gwd-video-asar {
-    cursor: pointer;
-    height: 300px;
-    object-fit: cover;
-    width: 300px;
-    transform: matrix(1, 0, 0, 1, -150, -150);
-    -webkit-transform: matrix(1, 0, 0, 1, -150, -150);
-    -moz-transform: matrix(1, 0, 0, 1, -150, -150);
-    opacity: 1;
-}
 .intermediate-element {
     cursor: pointer;
 }
 .gwd-video-1f1q {
     cursor: pointer;
 }
-@keyframes gwd-gen-1seugwdanimation_gwd-keyframes {
+.gwd-video-c4fq {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 970px;
+    height: 250px;
+    opacity: 1;
+}
+@keyframes gwd-gen-r85ygwdanimation_gwd-keyframes {
     0% {
         opacity: 1;
         animation-timing-function: linear;
@@ -1731,7 +1729,7 @@ body {
         -moz-animation-timing-function: linear;
     }
 }
-@-webkit-keyframes gwd-gen-1seugwdanimation_gwd-keyframes {
+@-webkit-keyframes gwd-gen-r85ygwdanimation_gwd-keyframes {
     0% {
         opacity: 1;
         -webkit-animation-timing-function: linear;
@@ -1745,7 +1743,7 @@ body {
         -webkit-animation-timing-function: linear;
     }
 }
-@-moz-keyframes gwd-gen-1seugwdanimation_gwd-keyframes {
+@-moz-keyframes gwd-gen-r85ygwdanimation_gwd-keyframes {
     0% {
         opacity: 1;
         -moz-animation-timing-function: linear;
@@ -1759,10 +1757,71 @@ body {
         -moz-animation-timing-function: linear;
     }
 }
-#page1.gwd-play-animation .gwd-gen-1seugwdanimation {
-    animation: 5.2s linear 0s 1 normal forwards gwd-gen-1seugwdanimation_gwd-keyframes;
-    -webkit-animation: 5.2s linear 0s 1 normal forwards gwd-gen-1seugwdanimation_gwd-keyframes;
-    -moz-animation: 5.2s linear 0s 1 normal forwards gwd-gen-1seugwdanimation_gwd-keyframes;
+#page1.gwd-play-animation .gwd-gen-r85ygwdanimation {
+    animation: 5.2s linear 0s 1 normal forwards gwd-gen-r85ygwdanimation_gwd-keyframes;
+    -webkit-animation: 5.2s linear 0s 1 normal forwards gwd-gen-r85ygwdanimation_gwd-keyframes;
+    -moz-animation: 5.2s linear 0s 1 normal forwards gwd-gen-r85ygwdanimation_gwd-keyframes;
+}
+.gwd-video-tw86 {
+    position: absolute;
+    width: 970px;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+}
+@keyframes gwd-gen-itq7gwdanimation_gwd-keyframes {
+    0% {
+        opacity: 1;
+        animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+    }
+    90.3846% {
+        opacity: 1;
+        animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+    }
+    100% {
+        opacity: 0;
+        animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+    }
+}
+@-webkit-keyframes gwd-gen-itq7gwdanimation_gwd-keyframes {
+    0% {
+        opacity: 1;
+        -webkit-animation-timing-function: linear;
+    }
+    90.3846% {
+        opacity: 1;
+        -webkit-animation-timing-function: linear;
+    }
+    100% {
+        opacity: 0;
+        -webkit-animation-timing-function: linear;
+    }
+}
+@-moz-keyframes gwd-gen-itq7gwdanimation_gwd-keyframes {
+    0% {
+        opacity: 1;
+        -moz-animation-timing-function: linear;
+    }
+    90.3846% {
+        opacity: 1;
+        -moz-animation-timing-function: linear;
+    }
+    100% {
+        opacity: 0;
+        -moz-animation-timing-function: linear;
+    }
+}
+#page1.gwd-play-animation .gwd-gen-itq7gwdanimation {
+    animation: 5.2s linear 0s 1 normal forwards gwd-gen-itq7gwdanimation_gwd-keyframes;
+    -webkit-animation: 5.2s linear 0s 1 normal forwards gwd-gen-itq7gwdanimation_gwd-keyframes;
+    -moz-animation: 5.2s linear 0s 1 normal forwards gwd-gen-itq7gwdanimation_gwd-keyframes;
 }</style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
   <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
@@ -1772,25 +1831,45 @@ body {
   <script data-source="gwdgooglead_min.js" data-version="8" data-exports-type="gwd-google-ad" src="gwdgooglead_min.js"></script>
   <script data-source="gwdvideo_min.js" data-version="18" data-exports-type="gwd-video" src="gwdvideo_min.js"></script>
   <script data-source="gwdimage_min.js" data-version="15" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
+  <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
+  <script type="text/javascript" gwd-events="handlers">
+    gwd.auto_Page1Click = function(event) {
+      // GWD Predefined Function
+      gwd.actions.gwdGoogleAd.exit('gwd-ad', 'clickTag', 'https://breezeurgentcare.texashealth.org/?utm_source=display&utm_medium=banner&utm_campaign=thuc-16604&utm_content=970x250-urgentobjectsturkey', true, true, 'page1');
+    };
+  </script>
+  <script type="text/javascript" gwd-events="registration">
+    // Support code for event handling in Google Web Designer
+    // This script block is auto-generated. Please do not edit!
+    gwd.actions.events.registerEventHandlers = function(event) {
+      gwd.actions.events.addHandler('page1', 'click', gwd.auto_Page1Click, false);
+    };
+    gwd.actions.events.deregisterEventHandlers = function(event) {
+      gwd.actions.events.removeHandler('page1', 'click', gwd.auto_Page1Click, false);
+    };
+    document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
+    document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
+  </script>
 </head>
 
 <body>
   <gwd-google-ad id="gwd-ad">
-    <gwd-metric-configuration></gwd-metric-configuration>
     <gwd-pagedeck class="gwd-page-container" id="pagedeck">
       <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-1did" data-gwd-width="970px" data-gwd-height="250px">
         <div class="gwd-page-content gwd-page-size">
-          <gwd-video id="gwd-video_1" sources="20-THUC-Turkey_300x300.mp4" class="gwd-video-asar gwd-gen-c271gwdanimation gwd-gen-1seugwdanimation" data-gwd-name="18-SAB-0101-vid" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: auto; min-height: 100%; min-width: 100%; height: 300px;" autoplay="" muted=""></gwd-video>
-          <gwd-image id="yeow" source="yeow.png?1605835234763" scaling="stretch" class="gwd-image-14ne gwd-gen-1ik2gwdanimation"></gwd-image>
-          <gwd-image id="c1text" source="c1text.png?1605835234763" scaling="stretch" class="gwd-image-288l gwd-gen-vu7vgwdanimation"></gwd-image>
-          <gwd-image id="c2text" source="c2text.png?1605835234763" scaling="stretch" class="gwd-image-1ri1 gwd-gen-1knagwdanimation"></gwd-image>
-          <gwd-image id="c3text" source="c3text.png?1605835234763" scaling="stretch" class="gwd-image-1vti gwd-gen-cfjmgwdanimation"></gwd-image>
-          <gwd-image id="check1" source="check1.png?1605835234763" scaling="stretch" class="gwd-image-1j6y gwd-gen-1ugcgwdanimation"></gwd-image>
-          <gwd-image id="logo" source="logo.png?1605835234763" scaling="stretch" class="gwd-image-17sn gwd-gen-1djzgwdanimation"></gwd-image>
-          <gwd-image id="cta" source="cta.png?1605835234763" scaling="stretch" class="gwd-image-sggl gwd-gen-1d8cgwdanimation"></gwd-image>
+          <gwd-video id="970x250-BG_1" muted="" sources="970x250-BG_1.webm" class="gwd-video-tw86 gwd-gen-itq7gwdanimation" autoplay=""></gwd-video>
+          <gwd-video id="970x250-BG" muted="" sources="970x250-BG.mp4" class="gwd-video-c4fq gwd-gen-r85ygwdanimation" autoplay=""></gwd-video>
+          <gwd-image id="yeow" source="yeow.png?1605853685566" scaling="stretch" class="gwd-image-14ne gwd-gen-1ik2gwdanimation"></gwd-image>
+          <gwd-image id="c1text" source="c1text.png?1605853685566" scaling="stretch" class="gwd-image-288l gwd-gen-vu7vgwdanimation"></gwd-image>
+          <gwd-image id="c2text" source="c2text.png?1605853685566" scaling="stretch" class="gwd-image-1ri1 gwd-gen-1knagwdanimation"></gwd-image>
+          <gwd-image id="c3text" source="c3text.png?1605853685566" scaling="stretch" class="gwd-image-1vti gwd-gen-cfjmgwdanimation"></gwd-image>
+          <gwd-image id="check1" source="check1.png?1605853685566" scaling="stretch" class="gwd-image-1j6y gwd-gen-1ugcgwdanimation"></gwd-image>
+          <gwd-image id="logo" source="logo.png?1605853685566" scaling="stretch" class="gwd-image-17sn gwd-gen-1djzgwdanimation"></gwd-image>
+          <gwd-image id="cta" source="cta.png?1605853685566" scaling="stretch" class="gwd-image-sggl gwd-gen-1d8cgwdanimation"></gwd-image>
         </div>
       </gwd-page>
     </gwd-pagedeck>
+    <gwd-exit metric="clickTag" url="https://breezeurgentcare.texashealth.org/?utm_source=display&amp;utm_medium=banner&amp;utm_campaign=thuc-16604&amp;utm_content=970x250-urgentobjectsturkey"></gwd-exit>
   </gwd-google-ad>
   <script type="text/javascript" id="gwd-init-code">
     (function() {
@@ -1832,5 +1911,7 @@ body {
 
 
 <script data-exports-type="gwd-studio-registration">function StudioExports() {
-studio.video.Reporter.attach("gwd-video_1", dummyVideoElem, true);
-}</script><script type="text/gwd-admetadata">{"version":1,"type":"GoogleAd","format":"","template":"Banner 3.0.0","politeload":false,"fullscreen":false,"counters":[{"sourceType":"gwd-video","source":"gwd-video_1","metric":"gwd-video_1","isAutoplay":true}],"timers":[],"exits":[],"creativeProperties":{"minWidth":970,"minHeight":250,"maxWidth":970,"maxHeight":250},"components":["gwd-google-ad","gwd-image","gwd-page","gwd-pagedeck","gwd-video"],"responsive":false}</script><script data-exports-type="dclk-quick-preview">studio.Enabler.setRushSimulatedLocalEvents(true);</script></body></html>
+studio.video.Reporter.attach("970x250-BG_1", dummyVideoElem, true);
+studio.video.Reporter.attach("970x250-BG", dummyVideoElem, true);
+Enabler.exit("clickTag", "https://breezeurgentcare.texashealth.org/?utm_source=display&utm_medium=banner&utm_campaign=thuc-16604&utm_content=970x250-urgentobjectsturkey");
+}</script><script type="text/gwd-admetadata">{"version":1,"type":"GoogleAd","format":"","template":"Banner 3.0.0","politeload":false,"fullscreen":false,"counters":[{"sourceType":"gwd-video","source":"970x250-BG_1","metric":"970x250-BG_1","isAutoplay":true},{"sourceType":"gwd-video","source":"970x250-BG","metric":"970x250-BG","isAutoplay":true}],"timers":[],"exits":[{"exitId":"clickTag","url":"https://breezeurgentcare.texashealth.org/?utm_source=display&utm_medium=banner&utm_campaign=thuc-16604&utm_content=970x250-urgentobjectsturkey"}],"creativeProperties":{"minWidth":970,"minHeight":250,"maxWidth":970,"maxHeight":250},"components":["gwd-google-ad","gwd-image","gwd-page","gwd-pagedeck","gwd-video"],"responsive":false}</script><script data-exports-type="dclk-quick-preview">studio.Enabler.setRushSimulatedLocalEvents(true);</script></body></html>
